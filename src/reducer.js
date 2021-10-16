@@ -3,10 +3,9 @@ export const initialState = {
     user : null
 }; 
 
-export const getBasketTotal = (basket) =>{
+export const getBasketTotal = (basket) =>
     //reuce iterates over the basket
     basket?.reduce((amount, item)=>item.price + amount, 0); 
-}
 
 const reducer = (state, action)=>{
     switch(action.type){
