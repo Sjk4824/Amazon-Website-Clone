@@ -7,6 +7,7 @@ import "./Payment.css";
 import { getBasketTotal } from "./reducer";
 import { useStateValue } from "./StateProvider";
 import axios from "./axios"; 
+import {db} from "./firebase"; 
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -42,7 +43,19 @@ function Payment() {
         payment_method : {
             card : elements.getElement(CardElement)
         }
-    }).then(({paymentIntent}) => {
+    }).then((response) => {
+      //console.log(response.error.payment_intent); 
+      db
+        .collection('users')
+        .doc(user?.uid)
+        .collection('orders')
+        .doc(response.error.payment_intent.id)  //not working 
+        .set({
+          basket: basket, 
+          amount: response.error.payment_intent.amount,
+          created: response.error.payment_intent.created
+        });
+
         setSucceeded(true);
         setError(null); 
         setProcessing(false); 
@@ -50,9 +63,9 @@ function Payment() {
           type: 'EMPTY_BASKET'
         })
         history.replace("/orders");
-    })
+    }); 
   }
-
+  
   const handleChange = (event) => {
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");

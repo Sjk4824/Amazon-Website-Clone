@@ -17,10 +17,10 @@ function App() {
   const promise = loadStripe('pk_test_51JlFItSHFR9c1cTSTO7QkjhKytXemYls5vRAbTJMmqnEkpOlYiRwRkjHbH80aoYbSrPDwt49OweK6r4KMk3xLv5b00cIvuqJVP');
 
   const [{}, dispatch] = useStateValue(); 
+
   useEffect(()=>{
     //since the bracket is empty, this runs once when the page loads. 
     auth.onAuthStateChanged(authUser => {
-      console.log("The auth user is>>>>", authUser)
 
       if(authUser){
         //the user just logged in/ user is already logged in
@@ -36,7 +36,7 @@ function App() {
           user: null
         })
       }
-    }) //so if we login, logout it will fire this code. 
+    })
   }, [])
 
   return (
