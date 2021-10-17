@@ -44,7 +44,7 @@ function Payment() {
             card : elements.getElement(CardElement)
         }
     }).then((response) => {
-      //console.log(response.error.payment_intent); 
+      // console.log(response); 
       db
         .collection('users')
         .doc(user?.uid)
@@ -63,7 +63,7 @@ function Payment() {
           type: 'EMPTY_BASKET'
         })
         history.replace("/orders");
-    }); 
+    }).catch(err => console.log(err)); 
   }
   
   const handleChange = (event) => {
@@ -97,6 +97,7 @@ function Payment() {
             {/* All the products will be displayed here */}
             {basket.map((item) => (
               <CheckoutProduct
+                key={item.id}
                 id={item.id}
                 image={item.image}
                 title={item.title}
