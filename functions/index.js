@@ -17,7 +17,7 @@ app.use(express.json()); //subsitute for body parser
 //     res.status(200).send("Hello World!"); 
 // }); 
 
-app.post("/payments/create", async (req, res)=>{
+app.post("/payments/create", async function(req, res){
     const total = req.query.total;  //query paramter used in payment.js
     console.log("Payment request received ", total);
     const paymentIntent = await stripe.paymentIntents.create({
