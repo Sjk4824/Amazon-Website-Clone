@@ -1,0 +1,76 @@
+[debug] [2021-10-18T16:55:59.452Z] ----------------------------------------------------------------------
+[debug] [2021-10-18T16:55:59.454Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2021-10-18T16:55:59.454Z] CLI Version:   9.20.0
+[debug] [2021-10-18T16:55:59.455Z] Platform:      darwin
+[debug] [2021-10-18T16:55:59.455Z] Node Version:  v14.17.6
+[debug] [2021-10-18T16:55:59.456Z] Time:          Mon Oct 18 2021 20:55:59 GMT+0400 (Gulf Standard Time)
+[debug] [2021-10-18T16:55:59.456Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-18T16:55:59.516Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-18T16:55:59.516Z] > authorizing via signed-in user (sadhanajayakumar@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2021-10-18T16:55:59.569Z] [hub] writing locator at /var/folders/lw/hpf08s3n35jdqg8lm4md6t0r0000gn/T/hub-clone-de225.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2021-10-18T16:55:59.889Z] Error: Cannot find module '/Users/sadhanajayakumar/Desktop/Files/Webd/amazon-clone/amazon-clone/functions/package.json'
+Require stack:
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:745:27)
+    at Module.require (internal/modules/cjs/loader.js:961:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at FunctionsEmulator.askInstallNodeVersion (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:454:21)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:166:32)
+    at Function.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/registry.js:16:24)
+    at startEmulator (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:90:39)
+    at Object.startAll (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:273:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Command.actionFn (/usr/local/lib/node_modules/firebase-tools/lib/commands/emulators-start.js:26:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-10-18T16:58:07.488Z] ----------------------------------------------------------------------
+[debug] [2021-10-18T16:58:07.490Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2021-10-18T16:58:07.490Z] CLI Version:   9.20.0
+[debug] [2021-10-18T16:58:07.490Z] Platform:      darwin
+[debug] [2021-10-18T16:58:07.491Z] Node Version:  v14.17.6
+[debug] [2021-10-18T16:58:07.492Z] Time:          Mon Oct 18 2021 20:58:07 GMT+0400 (Gulf Standard Time)
+[debug] [2021-10-18T16:58:07.492Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-18T16:58:07.548Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-18T16:58:07.548Z] > authorizing via signed-in user (sadhanajayakumar@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2021-10-18T16:58:07.612Z] [hub] writing locator at /var/folders/lw/hpf08s3n35jdqg8lm4md6t0r0000gn/T/hub-clone-de225.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2021-10-18T16:58:07.923Z] Error: Cannot find module '/Users/sadhanajayakumar/Desktop/Files/Webd/amazon-clone/amazon-clone/functions/package.json'
+Require stack:
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:745:27)
+    at Module.require (internal/modules/cjs/loader.js:961:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at FunctionsEmulator.askInstallNodeVersion (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:454:21)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:166:32)
+    at Function.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/registry.js:16:24)
+    at startEmulator (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:90:39)
+    at Object.startAll (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:273:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Command.actionFn (/usr/local/lib/node_modules/firebase-tools/lib/commands/emulators-start.js:26:9)
+[error] 
+[error] Error: An unexpected error has occurred.
