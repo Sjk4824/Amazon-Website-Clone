@@ -30,7 +30,7 @@ function Product({id, title, image, price, rating}) {
                 <div className="product__rating">
                     {/* we need to iterate and print rating number of stars */}
                     {Array(rating).fill().map((_,i)=>(
-                        <p key = {i}>⭐️</p>
+                        <p key = {i}>🍃</p>
                     ))}
                 </div>
             </div>

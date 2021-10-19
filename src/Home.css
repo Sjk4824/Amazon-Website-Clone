@@ -1,3 +1,12 @@
+.home__container{
+    background: linear-gradient(180deg, #C4DCC0 0%, rgba(196, 220, 192, 0) 100%);
+}
+.home__top{
+    display: flex;
+    font-family: 'Montserrat', sans-serif; 
+    color: #59695A;
+    margin-bottom: 50px;
+}
 .home{
     display: flex; 
     justify-content: center;
@@ -5,7 +14,31 @@
     margin-right: auto;
     max-width: 1500px;
 }
+.home__top__intro{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 200px;
+    font-size: 1.25rem;
+}
 
+.home__top__intro__button{
+    font-family: 'Montserrat', sans-serif; 
+    color:#59695A;
+    width: 200px;
+    height: 40px;
+    background: #F8F8F8;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+}
+
+.home__top__image{
+    width: 650px;
+    height: 300px;
+}
 .home__row{
     display: flex; 
     z-index: 1; 

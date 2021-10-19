@@ -17,22 +17,19 @@ function Header() {
 
     return (
         <div className = "header">
-            <Link to="/">
-                <img className="header__logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" />
-            </Link>
+            <h1 className="header__logo">flora</h1>
+          
             <div className = "header__search">
                 <input className = "header__searchInput" type="text"></input>
                 <FaSearch className = "header__searchIcon"/>
             </div>
             <div className = "header__nav">
-                {!user?
-                    <Link to="/login">
+                <Link to={!user && "/login"}>
                     <div onClick={handleAuthentication} className = "header__option">
                         <span className = "header__optionLineOne">Hello {user? user.email : 'Guest'}</span>
                         <span className = "header__optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
                     </div>
-                    </Link> : null
-                }
+                </Link>
 
                 <Link to ="/orders">
                     <div className = "header__option">
@@ -47,7 +44,7 @@ function Header() {
                 </div>
                 <Link to="/checkout">
                     <div className = "header__optionBasket">
-                        <AiOutlineShoppingCart size={28} className="cartIcon"/>
+                        <AiOutlineShoppingCart size={28} color="#59695A" className="cartIcon"/>
                         <span className="header__optionLineTwo headerBasketCount">{basket?.length}</span>
                     </div>
                 </Link>
