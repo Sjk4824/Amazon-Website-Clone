@@ -52,6 +52,12 @@
     margin-top: 10px;
     color: #fff; 
 }
+
+.payment__button:hover{
+    background: #374238;
+    cursor: pointer;
+}
+
 .payment__priceContainer > h3{
     margin-top: 15px;
     margin-bottom: 8px;

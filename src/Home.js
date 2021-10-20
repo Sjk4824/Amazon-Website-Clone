@@ -59,7 +59,7 @@ function Home() {
                         title="Monstera Monstera deliciosa: Monstera is iconic from many 70’s photographs, album covers, or advertisements."
                         price={15.65}
                         rating={4}
-                        image="https://thumbs.dreamstime.com/b/d-render-illustration-art-plants-tree-bush-white-background-front-view-plant-potted-vase-indoor-rendering-ilustracion-217501203.jpg"
+                        image="https://m.media-amazon.com/images/I/61O7VHZtmgL._SL1400_.jpg"
                         />
 
                         <Product 

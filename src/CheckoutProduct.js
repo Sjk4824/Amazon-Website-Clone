@@ -22,7 +22,7 @@ function CheckoutProduct({id, image, price, rating, title, hideButton}) {
                     { Array.apply(null, {length: rating}).map((_,i)=>(<p key={i}>🍃</p>)) }
                 </div>
                 {!hideButton && (
-                    <button onClick = {removeFromBasket}>Remove from Basket</button>
+                    <button className="checkoutProduct__button" onClick = {removeFromBasket}>Remove from Basket</button>
                 )}
                 
             </div>

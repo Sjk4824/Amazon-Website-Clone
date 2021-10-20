@@ -36,6 +36,10 @@
     border: none;
     margin-top: 30px;
 }
+.home__top__intro__button:hover{
+    background: #374238;
+    cursor: pointer;
+}
 
 .home__top__image{
     width: 650px;

@@ -12,11 +12,6 @@ const app = express();
 app.use(cors({origin: true})); 
 app.use(express.json()); //subsitute for body parser
 
-// //Api Routes 
-// app.get("/", (req, res)=>{
-//     res.status(200).send("Hello World!"); 
-// }); 
-
 app.post("/payments/create", async function(req, res){
     const total = req.query.total;  //query paramter used in payment.js
     console.log("Payment request received ", total);

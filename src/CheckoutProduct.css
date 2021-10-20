@@ -20,7 +20,10 @@
     width: 175px;
     border-radius: 10px;
 }
-
+.checkoutProduct__button:hover{
+    background: #374238;
+    cursor: pointer;
+}
 .checkoutProduct__image{
     object-fit: contain;
     width: 180px;
