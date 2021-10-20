@@ -5,13 +5,25 @@
     background-color: white;
     position: relative;
 }
+.order > h2{
+    font-family: 'Montserrat', sans-serif;
+    color:#59695A;
+}
+.date__and__time{
+    font-family: 'Montserrat', sans-serif;
+    color:#59695A;
+}
 .order__id{
     position: absolute;
     top: 40px; 
     right: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    color:#59695A;
 }
 
 .order__total{
+    font-family: 'Montserrat', sans-serif;
+    color:#59695A;
     font-weight: 500;
     text-align: right;
 }
