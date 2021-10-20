@@ -4,15 +4,21 @@
     margin-bottom : 20px; 
 }
 .checkoutProduct__info{
+    font-family: 'Montserrat', sans-serif;
+    color:#59695A;
     padding-left : 20px; 
 
 }
-.checkoutProduct > button{
-    background: #f0c14b; 
-    border: 1px solid;
+
+.checkoutProduct__info > button{
+    font-family: 'Montserrat', sans-serif;
+    background: #59695A; 
     margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
+    color: #fff;
+    border: none;
+    height: 35px;
+    width: 175px;
+    border-radius: 10px;
 }
 
 .checkoutProduct__image{

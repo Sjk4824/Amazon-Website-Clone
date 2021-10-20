@@ -19,7 +19,7 @@ function CheckoutProduct({id, image, price, rating, title, hideButton}) {
                 <p className="checkoutProduct__title">{title}</p>
                 <p className="checkoutProduct__price"><small>$</small><strong>{price}</strong></p>
                 <div className = "checkoutProduct__rating">
-                    { Array.apply(null, {length: rating}).map((_,i)=>(<p key={i}>⭐️</p>)) }
+                    { Array.apply(null, {length: rating}).map((_,i)=>(<p key={i}>🍃</p>)) }
                 </div>
                 {!hideButton && (
                     <button onClick = {removeFromBasket}>Remove from Basket</button>

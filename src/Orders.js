@@ -30,7 +30,6 @@ function Orders() {
 
     return (
         <div className = "orders">
-            <h1>This is the orders page!</h1>
             <div className = "orders__order">
                 {orders?.map(order => (
                     <Order order={order}  />  

@@ -75,7 +75,7 @@ function Payment() {
     <div className="payment">
       <div className="payment__container">
         <h1>
-          Checkout (<Link to="/checkout">{basket?.length} items</Link>)
+          Checkout (<Link style={{textDecoration : "none", color : "#59695A"}} to="/checkout">{basket?.length} items</Link>)
         </h1>
         {/* Payment section --> delivery address */}
         <div className="payment__section">

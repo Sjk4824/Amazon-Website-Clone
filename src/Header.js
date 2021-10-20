@@ -17,21 +17,23 @@ function Header() {
 
     return (
         <div className = "header">
-            <h1 className="header__logo">flora</h1>
+            <Link style={{textDecoration : "none"}} to ="/">
+                <h1 className="header__logo">flora</h1>
+            </Link>
           
             <div className = "header__search">
                 <input className = "header__searchInput" type="text"></input>
-                <FaSearch className = "header__searchIcon"/>
+                <FaSearch color="#59695A" className = "header__searchIcon"/>
             </div>
             <div className = "header__nav">
-                <Link to={!user && "/login"}>
+                <Link style={{textDecoration : "none"}} to={!user && "/login"}>
                     <div onClick={handleAuthentication} className = "header__option">
                         <span className = "header__optionLineOne">Hello {user? user.email : 'Guest'}</span>
                         <span className = "header__optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
                     </div>
                 </Link>
 
-                <Link to ="/orders">
+                <Link style={{textDecoration : "none"}} to ="/orders">
                     <div className = "header__option">
                         <span className = "header__optionLineOne">Returns</span>
                         <span className = "header__optionLineTwo">& Orders</span>                   
@@ -42,9 +44,9 @@ function Header() {
                     <span className = "header__optionLineOne">Your</span>
                     <span className = "header__optionLineTwo">Prime</span>
                 </div>
-                <Link to="/checkout">
+                <Link style={{textDecoration : "none"}} to="/checkout">
                     <div className = "header__optionBasket">
-                        <AiOutlineShoppingCart size={28} color="#59695A" className="cartIcon"/>
+                        <AiOutlineShoppingCart size={28} color="#FFF" className="cartIcon"/>
                         <span className="header__optionLineTwo headerBasketCount">{basket?.length}</span>
                     </div>
                 </Link>

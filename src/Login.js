@@ -34,8 +34,9 @@ function Login() {
 
     return (
         <div className="login">
-            <Link to="/">
-                <img className="login__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2880px-Amazon_logo.svg.png" alt=""></img>
+            <Link style = {{textDecoration : "none"}} to="/">
+                {/* <img className="login__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2880px-Amazon_logo.svg.png" alt=""></img> */}
+                <h1 className="login__logo">flora</h1>
             </Link>
             <div className="login__container">
                 <h1>Sign In</h1>
@@ -48,8 +49,8 @@ function Login() {
 
                     <button type="submit" onClick={signIn} className="login__signInButton">Sign In</button>
                 </form>
-                <p>By signing-in you agree to Amazon's conditions of use and sale. Please see our privacy notice, our cookies notice and our interest based ads notice.</p>
-                <button onClick={register} className="login__registerButton">Create your Amazon Account</button>
+                <p>By signing-in you agree to flora's conditions of use and sale. Please see our privacy notice, our cookies notice and our interest based ads notice.</p>
+                <button onClick={register} className="login__registerButton">Create your flora Account</button>
             </div>
         </div>
     )

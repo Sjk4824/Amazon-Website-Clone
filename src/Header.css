@@ -2,7 +2,7 @@
     height : 60px; 
     display: flex; 
     align-items: center;
-    background-color: #fff;
+    background-color:#59695A;
     position: sticky;
     top : 0; 
     z-index: 100;
@@ -12,7 +12,7 @@
     object-fit: contain;
     margin: 0 20px;
     font-size: 2.5rem;
-    color: #59695A;
+    color: #FFF;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 400;
     /* margin-top: 18px; */
@@ -40,13 +40,13 @@
 }
 .header__optionLineOne{
     font-family: 'Montserrat', sans-serif; 
-    color: #59695A;
+    color: #FFF;
     font-size: 10px;
 }
 
 .header__optionLineTwo{
     font-family: 'Montserrat', sans-serif; 
-    color: #59695A;
+    color: #FFF;
     font-size: 13px;
     font-weight: 800;
 }
@@ -60,12 +60,12 @@
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
-    color: #fff;
+    color: #FFF;
 }
 .header__optionBasket{
     display: flex; 
     align-items: center;
-    color: white;
+    color: #FFF;
 }
 .headerBasketCount{
     margin-left: 4px;
